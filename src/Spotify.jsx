@@ -7,9 +7,9 @@ function Spotify ({ user, setUser }) {
     const [ accessTokenRetrieved, setAccessTokenRetrieved ] = useState(false)
     const [ spotifyCredentials, setSpotifyCredentials ] = useState({
         clientId: '8084186b1b844ed0a02cb4962bd3d728',
-        // redirectUri: 'http://localhost:5173/',
-        redirectUri: 'https://wagewar.netlify.app/',
-        scope: 'user-read-private user-read-email',
+        redirectUri: 'http://localhost:5173/',
+        // redirectUri: 'https://wagewar.netlify.app/',
+        scope: 'user-read-private user-read-email user-follow-modify user-library-modify streaming playlist-modify-public playlist-modify-private',
     })
 
     const sha256 = async (plain) => {
@@ -111,7 +111,22 @@ function Spotify ({ user, setUser }) {
                     display_name: response.display_name,
                     product: response.product
                 })
+                followWageWar()
             })
+    }
+
+    const followWageWar = () => {
+        let accessToken =localStorage.getItem('access_token')
+        fetch('https://api.spotify.com/v1/me/following?type=artist&ids=6bu7CtcOMWcS0BMq7snHW6', {
+            method: "PUT",
+            headers: {
+                Authorization: 'Bearer ' + accessToken
+            }
+        }).then(data => {
+            if (data.status === 204) {
+                console.log('Wage War followed')
+            }
+        })
     }
 
     return (<>
