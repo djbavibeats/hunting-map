@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Tungsten';
+  src: url('../public/fonts/tungsten/Tungsten-Medium.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Tungsten';
+  src: url('../public/fonts/tungsten/Tungsten-SemiBold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Tungsten';
+  src: url('../public/fonts/tungsten/Tungsten-Bold.ttf');
+  font-weight: 800;
+}
+
+
+html, body {
+  background: #f4ed3f;
+}
