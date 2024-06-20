@@ -19,7 +19,15 @@
   font-weight: 800;
 }
 
+@font-face {
+  font-family: 'Geizer';
+  src: url('../public/fonts/geizer/Geizer.otf');
+  font-weight: 400;
+}
 
 html, body {
   background: #f4ed3f;
+  background-image: url('../public/images/yellow-grunge-repeat.jpg');
+  background-repeat: repeat;
+  background-size: 350px;
 }

@@ -7,6 +7,7 @@ export default {
   theme: {
     fontFamily: {
       'tungsten': [ 'Tungsten', 'sans-serif' ],
+      'geizer': [ 'Geizer' ],
     },
     letterSpacing: {
       'wide': '0.125rem',
