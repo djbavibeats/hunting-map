@@ -7,8 +7,8 @@ function Spotify ({ user, setUser }) {
     const [ accessTokenRetrieved, setAccessTokenRetrieved ] = useState(false)
     const [ spotifyCredentials, setSpotifyCredentials ] = useState({
         clientId: '8084186b1b844ed0a02cb4962bd3d728',
-        redirectUri: 'http://localhost:5173/',
-        // redirectUri: 'https://wagewar.netlify.app/',
+        // redirectUri: 'http://localhost:5173/',
+        redirectUri: 'https://wagewar.netlify.app/',
         scope: 'user-read-private user-read-email user-follow-modify user-library-modify streaming playlist-modify-public playlist-modify-private',
     })
 
