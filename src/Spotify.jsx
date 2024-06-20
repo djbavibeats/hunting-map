@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-import { code } from "three/examples/jsm/nodes/Nodes.js"
 
 import SpotifyLogo from '../public/images/spotify-logo.png'
 
