@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-import SpotifyLogo from '../public/images/spotify-logo.png'
+import SpotifyLogo from '../../../public/images/spotify-logo.png'
 
 function Spotify ({ user, setUser }) {
     const [ codeChallenge, setCodeChallenge ] = useState('')

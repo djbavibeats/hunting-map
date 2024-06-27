@@ -12,11 +12,10 @@ function TourDates () {
         
     }, [])
     return (<>
-    <div className="w-[95%]">
+    <div className="w-[98%] overflow-y-scroll px-2 mb-2">
         { tourDates &&
-            tourDates.map(show => {
-                console.log(show)
-                return (<div className="
+            tourDates.map((show, index) => {
+                return (<div key={ index } className="
                     flex flex-col items-center justify-center mb-
                     md:grid md:grid-cols-5 md:gap-x-4 w-full md:h-14 
                     text-white font-tungsten text-xl tracking-wide
