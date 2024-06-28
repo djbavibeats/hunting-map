@@ -22,21 +22,21 @@ function TourDates () {
                     ">
                     {/* Date */}
                     <div className="col-span-1 text-start">
-                        <p>{ format(new Date(show.datetime), "eee, MMM d") }</p>
+                        <p className="font-extrabold text-xl">{ format(new Date(show.datetime), "eee, MMM d") }</p>
                     </div>
 
                     {/* Venue */}
                     <div className="col-span-2 text-start">
-                        <p>{ show.venue.name }</p>
+                        <p className="font-normal text-lg">{ show.venue.name }</p>
                     </div>
 
                     {/* City, State */}
                     <div className="col-span-1 text-end">
-                        <p>{ show.venue.city }, { show.venue.region }</p>
+                        <p className="font-normal text-lg">{ show.venue.city }, { show.venue.region }</p>
                     </div>
 
                     {/* Ticket Link */}
-                    <div className="col-span-1 text-end mt-4 mb-4">
+                    <div className="col-span-1 text-end mt-4 mb-12">
                         <a className="
                             border-yellow text-yellow text-xl font-tungsten tracking-wide border px-4 py-2
                             hover:bg-yellow hover:text-black

@@ -95,7 +95,7 @@ const MobileButtonsBlock = ({ activeScreen, setActiveScreen }) => {
                         <path d="M565.6 36.2C572.1 40.7 576 48.1 576 56V392c0 10-6.2 18.9-15.5 22.4l-168 64c-5.2 2-10.9 2.1-16.1 .3L192.5 417.5l-160 61c-7.4 2.8-15.7 1.8-22.2-2.7S0 463.9 0 456V120c0-10 6.1-18.9 15.5-22.4l168-64c5.2-2 10.9-2.1 16.1-.3L383.5 94.5l160-61c7.4-2.8 15.7-1.8 22.2 2.7zM48 136.5V421.2l120-45.7V90.8L48 136.5zM360 422.7V137.3l-144-48V374.7l144 48zm48-1.5l120-45.7V90.8L408 136.5V421.2z"/>
                     </svg>
                 </div>
-                <p className="font-tungsten text-xl font-bold tracking-wide">Map</p>
+                <p className="font-tungsten text-xl font-bold tracking-wide">MAP</p>
             </div>
             {/* Tour Button */}
             <div className="flex flex-col items-center w-[50px]">
@@ -112,7 +112,7 @@ const MobileButtonsBlock = ({ activeScreen, setActiveScreen }) => {
                         <path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z"/>
                     </svg>
                 </div>
-                <p className="font-tungsten text-xl font-bold tracking-wide">Tour</p>
+                <p className="font-tungsten text-xl font-bold tracking-wide">TOUR</p>
             </div>
 
             {/* Stream Button */}
@@ -130,7 +130,7 @@ const MobileButtonsBlock = ({ activeScreen, setActiveScreen }) => {
                         <path d="M256 80C149.9 80 62.4 159.4 49.6 262c9.4-3.8 19.6-6 30.4-6c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48c-44.2 0-80-35.8-80-80V384 336 288C0 146.6 114.6 32 256 32s256 114.6 256 256v48 48 16c0 44.2-35.8 80-80 80c-26.5 0-48-21.5-48-48V304c0-26.5 21.5-48 48-48c10.8 0 21 2.1 30.4 6C449.6 159.4 362.1 80 256 80z"/>
                     </svg>
                 </div>
-                <p className="font-tungsten text-xl font-bold tracking-wide">Stigma</p>
+                <p className="font-tungsten text-xl font-bold tracking-wide">STIGMA</p>
             </div>
         </div>
         
