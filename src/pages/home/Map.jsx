@@ -6,10 +6,12 @@ import TourDates from './TourDates'
 import TourHeader from '../../../public/images/hero-magnetic.png'
 import Logo from '../../../public/images/logo.png'
 
-import 'mapbox-gl/dist/mapbox-gl.css';
+import 'mapbox-gl/dist/mapbox-gl.css'; 
 
 mapboxgl.accessToken = 'pk.eyJ1IjoianVzdGludm9sdGNyZWF0aXZlIiwiYSI6ImNrczY2eDFpYTBieXEzMGxoaDF1Nmd2aXgifQ.0HoSQyn8pH5coK4IxPRhrQ';
 
+import geojson from './geojson'
+console.log(geojson)
 const HeaderBlock = () => {
     return (
         <div className="flex flex-col items-center justify-center mb-4 md:mb-0">
@@ -88,7 +90,7 @@ const MobileButtonsBlock = ({ activeScreen, setActiveScreen }) => {
     return (
         <div className="flex md:hidden items-between w-[175px] justify-between mt-2 gap-4">
             {/* Map Button */}
-            <div class="flex flex-col items-center w-[50px]">
+            <div className="flex flex-col items-center w-[50px]">
                 <div className={`
                     flex items-center justify-center gap-x-2
                     font-tungsten font-bold text-base tracking-wide rounded-full border-2 py-2 px-2
@@ -149,6 +151,7 @@ const MapBlock = () => {
     const [ lat, setLat ] = useState(0.0)
     const [ posInitialized, setPosInitialzed ] = useState(false)
     const [ zoom, setZoom ] = useState(9)
+    const [ showMapKey, setShowMapKey ] = useState(true)
 
     useEffect(() => {
         if (map.current) return; // initialize map only once
@@ -182,7 +185,7 @@ const MapBlock = () => {
     useEffect(() => {
         map.current = new mapboxgl.Map({
             container: mapContainer.current,
-            style: 'mapbox://styles/mapbox/dark-v11',
+            style: 'mapbox://styles/justinvoltcreative/clxz3zpw5005w01qrf1wzau5a',
             center: [lng, lat],
             zoom: zoom
         })
@@ -192,12 +195,95 @@ const MapBlock = () => {
             setLat(map.current.getCenter().lat.toFixed(4))
             setZoom(map.current.getZoom().toFixed(2))
         })
+
+        for (const feature of geojson.features) {
+            // create a HTML element for each feature
+          
+            // make a marker for each feature and add to the map
+            const el = document.createElement('div');
+            switch (feature.properties.type) {
+                case ('tacklebox'):
+                    el.className = 'tacklebox marker'
+                    break
+                case ('tourdate'):
+                    el.className = 'tourdate marker'
+                default:
+                    break
+            }
+            new mapboxgl.Marker(el)
+                .setLngLat(feature.geometry.coordinates)
+                .setPopup(
+                    new mapboxgl.Popup({ offset: 25 }) // add popups
+                        .setHTML(
+                        `<h3>${feature.properties.title}</h3>
+                        <p>${feature.properties.description}</p>
+                        ${feature.properties.type === 'tourdate' ? '<a style="color: #f4ed3f;" href=' + feature.properties.link + ' target="_blank">Tickets</a>' : '' }
+                        `
+                        )
+                )
+                .addTo(map.current);
+            
+          }
     }, [ posInitialized ])
+
+    const toggleMapKey = () => {
+        setShowMapKey(!showMapKey)
+    }
 
     return (<div className="
         w-full max-w-[100%] h-full
         md:w-full md:h-full
+        relative
     ">
+        <div className="absolute top-2 left-2 z-50 flex items-center gap-x-2" onClick={ () => toggleMapKey() }>
+            <div className="rounded-full bg-yellow h-6 w-6 flex items-center justify-center hover:cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='fill-black h-3 w-3'>
+                <path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"/>
+            </svg>
+            </div>
+            <p className="text-yellow font-tungsten tracking-wide text-xl">
+                Map Key
+            </p>
+        </div>
+        <div className={`absolute flex-col items-start justify-start p-8 left-0 right-0 bottom-0 h-full w-full md:h-1/2 md:w-1/2 bg-black border-2 border-black z-50
+                ${ showMapKey ? 'flex' : 'hidden' }
+            `}>
+            <div className="text-yellow font-tungsten text-5xl mb-4 flex w-full justify-between items-center">
+                <p>MAP KEY</p>
+                <div className="rounded-full bg-yellow h-6 w-6 flex items-center justify-center hover:cursor-pointer" onClick={ () => toggleMapKey() }>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" className="fill-black h-4 w-4">
+                        <path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/>
+                    </svg>
+                </div>
+            </div>
+            <div className="flex items-center gap-x-4 mb-2">
+                <div>
+                    <img src='./images/map-icons/tacklebox.png' />
+                </div>
+                <div className="text-white font-tungsten">
+                    <p className="text-3xl">TACKLEBOX</p>
+                    <p className="text-xl text-yellow">This is a desription about what happens at this location.</p>
+                </div>
+            </div>
+            <div className="flex items-center gap-x-4 mb-2">
+                <div>
+                    <img src='./images/map-icons/fan-meetup.png' />
+                </div>
+                <div className="text-white font-tungsten">
+                    <p className="text-3xl">FAN MEETUP</p>
+                    <p className="text-xl text-yellow">This is a desription about what happens at this location.</p>
+                </div>
+            </div>
+            <div className="flex items-center gap-x-4 mb-2">
+                <div>
+                    <img src='./images/map-icons/tourdate.png' />
+                </div>
+                <div className="text-white font-tungsten">
+                    <p className="text-3xl">WAGE WAR SHOW</p>
+                    <p className="text-xl text-yellow">This is a desription about what happens at this location.</p>
+                </div>
+            </div>
+        </div>
         <div ref={mapContainer} className="map-container h-[100%]" />
     </div>)
 }
