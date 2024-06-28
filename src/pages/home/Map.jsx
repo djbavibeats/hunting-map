@@ -151,7 +151,7 @@ const MapBlock = () => {
     const [ lat, setLat ] = useState(0.0)
     const [ posInitialized, setPosInitialzed ] = useState(false)
     const [ zoom, setZoom ] = useState(9)
-    const [ showMapKey, setShowMapKey ] = useState(true)
+    const [ showMapKey, setShowMapKey ] = useState(false)
 
     useEffect(() => {
         if (map.current) return; // initialize map only once
