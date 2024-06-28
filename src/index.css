@@ -105,6 +105,7 @@ html, body {
   top: -2px;
   font-size: 2.5rem;
   right: 7px;
+  outline: none !important;
 }
 
 .mapboxgl-popup-tip {
@@ -112,6 +113,10 @@ html, body {
   border-top-color: black !important;
   /* border: 10px solid black; */
   background: black;
+}
+
+.mapboxgl-popup-content > a {
+  outline: none !important;
 }
 
 iframe, canvas {
@@ -123,3 +128,4 @@ iframe, canvas {
     border-radius: 0 0 0.175rem 0 !important;
   }
 }
+
