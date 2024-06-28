@@ -67,28 +67,19 @@ const ButtonsBlock = ({ activeScreen, setActiveScreen }) => {
                     <path d="M256 80C149.9 80 62.4 159.4 49.6 262c9.4-3.8 19.6-6 30.4-6c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48c-44.2 0-80-35.8-80-80V384 336 288C0 146.6 114.6 32 256 32s256 114.6 256 256v48 48 16c0 44.2-35.8 80-80 80c-26.5 0-48-21.5-48-48V304c0-26.5 21.5-48 48-48c10.8 0 21 2.1 30.4 6C449.6 159.4 362.1 80 256 80z"/>
                 </svg>
             </div>
-            <div className={`
-                flex items-center justify-center gap-x-2 w-[350px] max-w-[100%] md:w-auto md:min-w-[200px]
-                font-tungsten font-bold text-base md:text-xl tracking-wide rounded-full border-2 py-2 px-8
-                hover:cursor-pointer md:hover:scale-110
-                transition duration-150 ease-in-out
-                bg-none
-            `}
-            >
                 
-                <div className="mt-[1.75px]"><p className="font-tungsten">
-                    No Locations Near You? Enter To Win Here
-                </p></div> 
+            <div className="mt-[1.75px]"><p className="mb-2 text-2xl font-tungsten">
+                No Locations Near You? <a href="#" className="underline">Enter To Win Here</a>
+            </p></div> 
                 {/* <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 512 512">
                     <path d="M256 80C149.9 80 62.4 159.4 49.6 262c9.4-3.8 19.6-6 30.4-6c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48c-44.2 0-80-35.8-80-80V384 336 288C0 146.6 114.6 32 256 32s256 114.6 256 256v48 48 16c0 44.2-35.8 80-80 80c-26.5 0-48-21.5-48-48V304c0-26.5 21.5-48 48-48c10.8 0 21 2.1 30.4 6C449.6 159.4 362.1 80 256 80z"/>
                 </svg> */}
-            </div>
         </div>)
 }
 
 const MobileButtonsBlock = ({ activeScreen, setActiveScreen }) => {
-    return (
-        <div className="flex md:hidden items-between w-[175px] justify-between mt-2 gap-4">
+    return (<>
+        <div className="flex md:hidden items-between w-[175px] justify-between mt-4 gap-4">
             {/* Map Button */}
             <div className="flex flex-col items-center w-[50px]">
                 <div className={`
@@ -141,7 +132,12 @@ const MobileButtonsBlock = ({ activeScreen, setActiveScreen }) => {
                 </div>
                 <p className="font-tungsten text-xl font-bold tracking-wide">Stigma</p>
             </div>
-        </div>)
+        </div>
+        
+        <div className="mt-[1.75px]"><p className="mt-2 text-2xl font-tungsten">
+            No Locations Near You? <a href="#" className="underline">Enter To Win Here</a>
+        </p></div> 
+        </>)
 }
 
 const MapBlock = () => {
@@ -235,8 +231,8 @@ const MapBlock = () => {
         md:w-full md:h-full
         relative
     ">
-        <div className="absolute top-2 left-2 z-50 flex items-center gap-x-2" onClick={ () => toggleMapKey() }>
-            <div className="rounded-full bg-yellow h-6 w-6 flex items-center justify-center hover:cursor-pointer">
+        <div className="absolute top-2 left-2 z-50 flex items-center gap-x-2 hover:cursor-pointer" onClick={ () => toggleMapKey() }>
+            <div className="rounded-full bg-yellow h-6 w-6 flex items-center justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='fill-black h-3 w-3'>
                 <path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"/>
             </svg>
@@ -306,12 +302,12 @@ const SetlistBlock = () => {
         //     }
         // }).then(response => console.log(response))
         window.open(
-            'https://open.spotify.com/album/7tZHRFl7eypO0M1RzBwMfk?si=_onJRJGnQreYTS0sNFOVtA',
+            'https://found.ee/ww_stigma',
             '_blank'    
         )
     }
 
-    return (<div className="w-full flex flex-col items-center justify-between h-full px-2">
+    return (<div className="w-full flex flex-col items-center justify-between h-full px-2 pb-8">
         <p className="text-yellow text-center font-tungsten text-[2.5rem] tracking-wide w-full">STREAM STIGMA</p>
         <iframe 
         style={{ borderRadius: `0px`, maxWidth: `500px` }}
@@ -353,7 +349,7 @@ function Map ({ user }) {
             ">
             {/* Mobile Layout */}
             <div className="
-                flex flex-col h-full mt-20 gap-y-4 py-4 items-center md:items-start justify-start
+                flex flex-col h-full mt-8 md:mt-20 gap-y-4 py-4 items-center md:items-start justify-start
                 md:grid md:gap-4 md:grid-cols-8 md:h-3/4 md:w-full md:p-16 md:m-8    
             ">
                 {/* Mobile */}
@@ -361,8 +357,6 @@ function Map ({ user }) {
                     <HeaderBlock />
                     <p className="block md:hidden font-tungsten font-normal text-2xl text-center mb-0 mt-0 max-w-[350px]">
                         Instructions or promotional text. This is where you could put instructions or promotional text. Instructions or promotional text. This is where you could put instructions or promotional text.
-                        <br/><br/>
-                        Or promotional text. This is where you could put instructions or promotional text.
                     </p>
                     <MobileButtonsBlock activeScreen={ activeScreen } setActiveScreen={ setActiveScreen } />
                 </div>
@@ -372,10 +366,13 @@ function Map ({ user }) {
                 <div className={`
                         w-[375px] m-auto
                         md:w-full md:col-span-5
-                        flex flex-col items-center justify-start bg-black gap-y-4
+                        flex flex-col items-center justify-start bg-[rgba(0,0,0,1.0)] rounded-md p-1 gap-y-4
                         h-full
                     `}
-                    style={{ height: rightColumnHeight >= 33 ? rightColumnHeight + "px" : "none" }}
+                    style={{ 
+                        boxShadow: `0px 0px 7.5px #000`,
+                        height: rightColumnHeight >= 33 ? rightColumnHeight + "px" : "none" 
+                    }}
                     ref={ rightColumnRef }
                 >
                     { activeScreen === 'mapblock' && <MapBlock /> }
@@ -390,8 +387,6 @@ function Map ({ user }) {
                         <HeaderBlock />
                         <p className="hidden md:block font-tungsten font-normal text-2xl text-center mb-8 mt-8 max-w-[350px]">
                             Instructions or promotional text. This is where you could put instructions or promotional text. Instructions or promotional text. This is where you could put instructions or promotional text.
-                            <br/><br/>
-                            Or promotional text. This is where you could put instructions or promotional text.
                         </p>
                     </div>
                     <ButtonsBlock activeScreen={ activeScreen } setActiveScreen={ setActiveScreen } />

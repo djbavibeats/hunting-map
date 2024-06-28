@@ -23,7 +23,7 @@ const Introduction = ({ user, setUser, setScreen }) => {
     <p className="font-tungsten font-bold text-[1.75rem] tracking-normal mb-0">
       HOW IT WORKS
     </p>
-    <p className="font-tungsten font-normal text-xl text-center mb-2">
+    <p className="font-tungsten font-normal text-2xl text-center mb-2">
       Instructions or promotional text. This is where you could put instructions or promotional text. Instructions or promotional text. This is where you could put instructions or promotional text.
     </p>
     <div className="

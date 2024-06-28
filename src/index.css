@@ -113,3 +113,13 @@ html, body {
   /* border: 10px solid black; */
   background: black;
 }
+
+iframe, canvas {
+  border-radius: 0.175rem !important;
+}
+
+@media only screen and (min-width: 1024px) {
+  .mapboxgl-ctrl-bottom-right, .mapboxgl-ctrl.mapboxgl-ctrl-attrib {
+    border-radius: 0 0 0.175rem 0 !important;
+  }
+}
