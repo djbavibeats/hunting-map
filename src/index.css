@@ -129,3 +129,45 @@ iframe, canvas {
   }
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #f4ee3e inset !important;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+input[type='file'] {
+  background-color: transparent;
+}
+
+.input-group input[type='file'] {
+  flex: 0.75;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-group input[type='file']::-webkit-file-upload-button {
+  display: none;
+}
+
+.input-group input[type='file']::file-selector-button {
+  display: none;
+}
+
+.input-group-text {
+  flex: 0.25;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div {
+}
+

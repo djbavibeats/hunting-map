@@ -15,7 +15,8 @@ export default {
     colors: {
       'yellow': '#f4ed3f',
       'black': '#000000',
-      'white': '#ffffff'
+      'white': '#ffffff',
+      'red': '#cf0000'
     },
     extend: {
     },
