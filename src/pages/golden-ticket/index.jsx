@@ -121,6 +121,7 @@ const SubmissionForm = ({ setFormSubmitted }) => {
                             if (resp.status === 200) {
                                 setLoading(false)
                                 setFormSubmitted(true)
+                                window.localStorage.setItem('form_submitted', true)
                             } else {
                                 alert("Something went wrong and we were unable to process your request. Please try again")
                                 setLoading(false)
@@ -273,7 +274,12 @@ const SubmissionForm = ({ setFormSubmitted }) => {
 }
 function GoldenTicket() {
     const [ formSubmitted, setFormSubmitted ] = useState(false)
-
+    useEffect(() => {
+        if (localStorage.getItem('form_submitted') === 'true') {
+            setFormSubmitted(true)
+        }
+    }, [])
+    
     return (<div className="w-full flex items-center justify-center content-body">
         <div>
             <div className="flex flex-col gap-y-4 items-center justify-center max-w-[375px] mt-8 h-full">

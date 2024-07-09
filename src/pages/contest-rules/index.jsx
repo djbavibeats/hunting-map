@@ -12,7 +12,7 @@ function ContestRules() {
                 <a className="font-tungsten text-center text-2xl font-bold mt-2" href="/">Back to home</a>
             </div>
         </div>
-        <div className="max-w-[340px] flex flex-col items-start">
+        <div className="max-w-[340px] md:max-w-[800px] flex flex-col items-start">
             <p className="font-tungsten font-bold text-center text-4xl mb-4 md:text-[4rem] leading-none">Official Contest Rules</p>
             <p className="font-tungsten font-normal text-2xl mb-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue aliquam ultrices. Fusce ultrices vulputate venenatis. 

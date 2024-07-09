@@ -117,7 +117,7 @@ function Spotify ({ user, setUser }) {
     }
 
     const followWageWar = () => {
-        let accessToken =localStorage.getItem('access_token')
+        let accessToken = localStorage.getItem('access_token')
         fetch('https://api.spotify.com/v1/me/following?type=artist&ids=6bu7CtcOMWcS0BMq7snHW6', {
             method: "PUT",
             headers: {

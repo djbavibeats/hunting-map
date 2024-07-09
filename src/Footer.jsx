@@ -5,13 +5,16 @@ function Footer() {
         <p className="text-[10px] md:text-[14px] leading-[12px]">
           <a href="https://wagewarband.com/" target="_blank" rel="noopener">Wage War.</a>
           &nbsp; 
+          <span className="md:hidden"><br/></span>
           <a href="https://fearlessrecords.com/" target="_blank" rel="noopener">Fearless Records.</a>
         </p>
       </div>
       <div className="w-1/3  text-center">
         <p className="text-[10px] md:text-[14px] leading-[12px]">
           {/* <span onClick={ toggleTermsModalVisible } className="hover:cursor-pointer">Terms of Service.</span> */}
-          <a href="#" target="_blank" rel="noopener">Terms & Conditions.</a> <br/>
+          <a className="" href="#" target="_blank" rel="noopener">Terms & Conditions.</a>
+          &nbsp;
+          <span className="md:hidden"><br/></span>
           <a href="/contest-rules">Contest Rules.</a>
           {/* &nbsp; */}
           {/* <a href="https://concord.com/privacy-policy/" target="_blank" rel="noopener">Privacy Policy.</a> */}
