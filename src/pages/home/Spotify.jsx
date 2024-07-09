@@ -3,12 +3,13 @@ import { useEffect, useState } from "react"
 import SpotifyLogo from '../../../public/images/spotify-logo.png'
 
 function Spotify ({ user, setUser }) {
+    const redirect_uri = import.meta.env.VITE_SPOTIFY_REDIRECT_URL
+    const spotify_client_id = import.meta.env.VITE_SPOTIFY_CLIENT_ID
     const [ codeChallenge, setCodeChallenge ] = useState('')
     const [ accessTokenRetrieved, setAccessTokenRetrieved ] = useState(false)
     const [ spotifyCredentials, setSpotifyCredentials ] = useState({
-        clientId: '8084186b1b844ed0a02cb4962bd3d728',
-        // redirectUri: 'http://localhost:5173/',
-        redirectUri: 'https://wagewar.netlify.app/',
+        clientId: spotify_client_id,
+        redirectUri: redirect_uri,
         scope: 'user-read-private user-read-email user-follow-modify user-library-modify streaming playlist-modify-public playlist-modify-private',
     })
 

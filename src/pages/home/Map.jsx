@@ -241,7 +241,7 @@ const MapBlock = () => {
                 Map Key
             </p>
         </div>
-        <div className={`absolute flex-col items-start justify-start p-8 left-0 right-0 bottom-0 h-full w-full md:h-1/2 md:w-1/2 bg-black border-2 border-black z-50
+        <div className={`absolute flex-col items-start justify-start p-4 left-0 right-0 bottom-0 h-full w-full md:h-1/2 md:w-1/2 bg-black border-2 border-black z-50
                 ${ showMapKey ? 'flex' : 'hidden' }
             `}>
             <div className="text-yellow font-tungsten text-5xl mb-4 flex w-full justify-between items-center">
@@ -261,7 +261,7 @@ const MapBlock = () => {
                     <p className="text-xl text-yellow">This is a desription about what happens at this location.</p>
                 </div>
             </div>
-            <div className="flex items-center gap-x-4 mb-2">
+            {/* <div className="flex items-center gap-x-4 mb-2">
                 <div>
                     <img src='./images/map-icons/fan-meetup.png' />
                 </div>
@@ -278,7 +278,7 @@ const MapBlock = () => {
                     <p className="text-3xl">WAGE WAR SHOW</p>
                     <p className="text-xl text-yellow">This is a desription about what happens at this location.</p>
                 </div>
-            </div>
+            </div> */}
         </div>
         <div ref={mapContainer} className="map-container h-[100%]" />
     </div>)
