@@ -147,7 +147,7 @@ const MapBlock = () => {
     const [ lat, setLat ] = useState(0.0)
     const [ posInitialized, setPosInitialzed ] = useState(false)
     const [ zoom, setZoom ] = useState(9)
-    const [ showMapKey, setShowMapKey ] = useState(false)
+    // const [ showMapKey, setShowMapKey ] = useState(false)
 
     useEffect(() => {
         if (map.current) return; // initialize map only once
@@ -222,16 +222,16 @@ const MapBlock = () => {
           }
     }, [ posInitialized ])
 
-    const toggleMapKey = () => {
-        setShowMapKey(!showMapKey)
-    }
+    // const toggleMapKey = () => {
+    //     setShowMapKey(!showMapKey)
+    // }
 
     return (<div className="
         w-full max-w-[100%] h-full
         md:w-full md:h-full
         relative
     ">
-        <div className="absolute top-2 left-2 z-50 flex items-center gap-x-2 hover:cursor-pointer" onClick={ () => toggleMapKey() }>
+        {/* <div className="absolute top-2 left-2 z-50 flex items-center gap-x-2 hover:cursor-pointer" onClick={ () => toggleMapKey() }>
             <div className="rounded-full bg-yellow h-6 w-6 flex items-center justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='fill-black h-3 w-3'>
                 <path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"/>
@@ -278,8 +278,8 @@ const MapBlock = () => {
                     <p className="text-3xl">WAGE WAR SHOW</p>
                     <p className="text-xl text-yellow">This is a desription about what happens at this location.</p>
                 </div>
-            </div> */}
-        </div>
+            </div> 
+        </div> */}
         <div ref={mapContainer} className="map-container h-[100%]" />
     </div>)
 }
@@ -355,8 +355,14 @@ function Map ({ user }) {
                 {/* Mobile */}
                 <div className="md:hidden w-full flex flex-col justify-center items-center md:-order-1">
                     <HeaderBlock />
-                    <p className="block md:hidden font-tungsten font-normal text-2xl text-center mb-0 mt-0 max-w-[350px]">
-                        Instructions or promotional text. This is where you could put instructions or promotional text. Instructions or promotional text. This is where you could put instructions or promotional text.
+                    <p className="block md:hidden font-tungsten font-normal text-[1.35rem] leading-[1.5rem] text-center mb-4 mt-0 max-w-[360px]">
+                        1. Using the map, find the marker nearest to you. The map view shows how close you are but won’t show you the best route to get to the secret location. 
+                    </p>
+                    <p className="block md:hidden font-tungsten font-normal text-[1.35rem] leading-[1.5rem] text-center mb-4 mt-0 max-w-[360px]">
+                        2. Now you must sleuth out likely hiding places for the box holding your prize. Take your time and be observant.
+                    </p>
+                    <p className="block md:hidden font-tungsten font-normal text-[1.35rem] leading-[1.5rem] text-center mb-2 mt-0 max-w-[360px]">
+                        3. Once you have found the box, you’ll find instructions inside on how to claim your prize. Be sure to take a picture and tag @wagewar #happyhunting on Instagram or Twitter.
                     </p>
                     <MobileButtonsBlock activeScreen={ activeScreen } setActiveScreen={ setActiveScreen } />
                 </div>
@@ -385,8 +391,14 @@ function Map ({ user }) {
                 <div className="col-span-3 flex flex-col justify-center items-center md:-order-1">
                     <div className="hidden md:flex md:flex-col">
                         <HeaderBlock />
-                        <p className="hidden md:block font-tungsten font-normal text-2xl text-center mb-8 mt-8 max-w-[350px]">
-                            Instructions or promotional text. This is where you could put instructions or promotional text. Instructions or promotional text. This is where you could put instructions or promotional text.
+                        <p className="hidden md:block font-tungsten font-normal text-2xl text-center mb-2 mt-8 max-w-[350px]">
+                            1. Using the map, find the marker nearest to you. The map view shows how close you are but won’t show you the best route to get to the secret location. 
+                        </p>
+                        <p className="hidden md:block font-tungsten font-normal text-2xl text-center mb-2 mt-0 max-w-[350px]">
+                            2. Now you must sleuth out likely hiding places for the box holding your prize. Take your time and be observant.
+                        </p>
+                        <p className="hidden md:block font-tungsten font-normal text-2xl text-center mb-8 mt-0 max-w-[350px]">
+                            3. Once you have found the box, you’ll find instructions inside on how to claim your prize. Be sure to take a picture and tag @wagewar #happyhunting on Instagram or Twitter.
                         </p>
                     </div>
                     <ButtonsBlock activeScreen={ activeScreen } setActiveScreen={ setActiveScreen } />

@@ -4,7 +4,7 @@ import { format } from 'date-fns'
 function TourDates () {
     const [ tourDates, setTourDates ] = useState()
     useEffect(() => {
-        fetch('https://rest.bandsintown.com/artists/Wage%20War/events?app_id=Test')
+        fetch('https://rest.bandsintown.com/artists/Wage%20War/events?app_id=3572beb75d98842347f125a66ddc282b')
         .then(response => response.json() )
         .then(tourDates => {
             setTourDates(tourDates)

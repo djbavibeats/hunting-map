@@ -25,7 +25,8 @@ const Introduction = ({ user, setUser, setScreen }) => {
       HOW IT WORKS
     </p>
     <p className="font-tungsten font-normal text-2xl text-center mb-2">
-      Instructions or promotional text. This is where you could put instructions or promotional text. Instructions or promotional text. This is where you could put instructions or promotional text.
+    {/* HUNTING SEASON HAS STARTED EARLY. JOIN THE HUNT FOR A CHANCE TO WIN AN EXCLUSIVE WAGE WAR PACKAGE AND TICKETS TO ONE OF OUR HEADLINE SHOWS. */}
+    Hunting season has started early. Join the hunt for a chance to win an exclusive Wage War package and tickets to one of our headline shows.
     </p>
     <div className="
           flex items-center justify-center gap-x-2
