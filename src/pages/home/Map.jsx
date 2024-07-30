@@ -197,26 +197,26 @@ const MapBlock = () => {
           
             // make a marker for each feature and add to the map
             const el = document.createElement('div');
-            switch (feature.properties.type) {
-                case ('tacklebox'):
-                    el.className = 'tacklebox marker'
-                    break
-                case ('tourdate'):
-                    el.className = 'tourdate marker'
-                default:
-                    break
-            }
+            el.className = 'tacklebox marker'
+            
+            // switch (feature.properties.type) {
+            //     case ('tacklebox'):
+            //         el.className = 'tacklebox marker'
+            //         break
+            //     case ('tourdate'):
+            //         el.className = 'tourdate marker'
+            //     default:
+            //         break
+            // }
+
             new mapboxgl.Marker(el)
                 .setLngLat(feature.geometry.coordinates)
-                .setPopup(
-                    new mapboxgl.Popup({ offset: 25 }) // add popups
-                        .setHTML(
-                        `<h3>${feature.properties.title}</h3>
-                        <p>${feature.properties.description}</p>
-                        ${feature.properties.type === 'tourdate' ? '<a style="color: #f4ed3f;" href=' + feature.properties.link + ' target="_blank">Tickets</a>' : '' }
-                        `
-                        )
-                )
+                // .setPopup(
+                //     new mapboxgl.Popup({ offset: 25 }) // add popups
+                //         .setHTML(
+                //         `<h3>${feature.properties.title}</h3>`
+                //         )
+                // )
                 .addTo(map.current);
             
           }
