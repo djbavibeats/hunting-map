@@ -211,12 +211,14 @@ const MapBlock = () => {
 
             new mapboxgl.Marker(el)
                 .setLngLat(feature.geometry.coordinates)
-                // .setPopup(
-                //     new mapboxgl.Popup({ offset: 25 }) // add popups
-                //         .setHTML(
-                //         `<h3>${feature.properties.title}</h3>`
-                //         )
-                // )
+                .setPopup(
+                    new mapboxgl.Popup({ offset: 25 }) // add popups
+                        .setHTML(
+                        `
+                        <p>${feature.geometry.coordinates[1]}, ${feature.geometry.coordinates[0]}</p>
+                        `
+                        )
+                )
                 .addTo(map.current);
             
           }

@@ -7,6 +7,7 @@ import WageWar from '../../../public/images/wage-war.png'
 const VideoPlayer = () => {
     const [ size, setSize ] = useState({ x: 0, y: 0 })
     const [ videoDimensions, setVideoDimensions ] = useState({ x: 350, y: 196.875 })
+    const VIDEO_URL = import.meta.env.VITE_VIDEO_URL
 
     const handleSizeChange = () => { setSize({ x: window.innerWidth, y: window.innerHeight }) }
 
@@ -49,14 +50,23 @@ const VideoPlayer = () => {
         <p className="font-tungsten font-normal text-2xl text-center mb-2">
             Enjoy the video.
         </p>
-        <Youtube 
+        {/* <Youtube 
             videoId="2g811Eo7K8U"
             opts={{
                 width: videoDimensions.x + 'px',
                 height: videoDimensions.y + 'px'
 
             }}
-        />
+        /> */}
+        <div style={{
+            height: videoDimensions.y + 'px',
+            width: videoDimensions.x + 'px'
+        }}
+        >
+            <video controls="controls" controlsList="nodownload" height={ `100%` } width={ `100%` } className="h-full w-full">
+                <source src={ VIDEO_URL } type="video/mp4"></source>
+            </video> 
+        </div>
     </>)
 }
 

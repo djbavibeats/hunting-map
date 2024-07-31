@@ -56,10 +56,10 @@ const geojson = {
         { properties: { title: 'Dallas' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             
         ]} },
-        { properties: { title: 'Denver' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
-            
-        ]} },
         */
+        { properties: { title: 'Denver' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+            -96.711444, 40.815722
+        ]} },
        { properties: { title: 'Charlotte' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -80.844220, 35.189580
         ]} },
@@ -82,10 +82,10 @@ const geojson = {
         { properties: { title: 'Philadelphia' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             
         ]} },
-        { properties: { title: 'San Antonio' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
-            
-        ]} },
         */
+        { properties: { title: 'San Antonio' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+            -98.473450, 29.590220
+        ]} },
         { properties: { title: 'Seattle' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -122.321630, 47.545180
         ]} },
@@ -93,9 +93,11 @@ const geojson = {
         { properties: { title: 'Houston' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             
         ]} },
+        */
         { properties: { title: 'Los Angeles' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
-            
+            -118.353610, 34.060820 
         ]} },
+        /*
         { properties: { title: 'Los Angeles' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             
         ]} },
@@ -113,10 +115,10 @@ const geojson = {
         { properties: { title: 'Salt Lake City' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             
         ]} },
-        { properties: { title: 'New York' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
-            
-        ]} },
         */
+        { properties: { title: 'New York' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+            -73.976640, 40.76618
+        ]} },
         { properties: { title: 'Montreal' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -73.250500, 45.305140
         ]} },
@@ -139,10 +141,10 @@ const geojson = {
         { properties: { title: 'Tampa' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             
         ]} },
-        { properties: { title: 'Washington DC' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
-            
-        ]} },
         */
+        { properties: { title: 'Washington DC' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+            -77.042100, 39.053170
+        ]} },
         { properties: { title: 'Berlin' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             13.425650, 52.499700
         ]} },
