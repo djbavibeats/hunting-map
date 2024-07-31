@@ -143,10 +143,10 @@ const MobileButtonsBlock = ({ activeScreen, setActiveScreen }) => {
 const MapBlock = () => {
     const mapContainer = useRef(null)
     const map = useRef(null)
-    const [ lng, setLng ] = useState(0.0)
-    const [ lat, setLat ] = useState(0.0)
+    const [ lng, setLng ] = useState(-120.0)
+    const [ lat, setLat ] = useState(40.0)
     const [ posInitialized, setPosInitialzed ] = useState(false)
-    const [ zoom, setZoom ] = useState(9)
+    const [ zoom, setZoom ] = useState(2)
     // const [ showMapKey, setShowMapKey ] = useState(false)
 
     useEffect(() => {
@@ -159,10 +159,14 @@ const MapBlock = () => {
                     setLng(position.coords.longitude)
                     setLat(position.coords.latitude)
                     setPosInitialzed(true)
+                    setZoom(9)
                 }, 
                 // Error
                 () => {
-                    alert('Geolocation is not enabled in this browser.')
+                    // alert('Geolocation Error.')
+                    // setLng(-120.000)
+                    // setLat(40.000)
+                    console.log('Geolocation disabled in this browser')
                 },
                 // Options 
                 { 
@@ -172,7 +176,7 @@ const MapBlock = () => {
                 } 
             )
         } else {
-            alert('Geolocation is not enabled in this browser.')
+            console.log('Geolocation disabled in this browser')
         }
 
         

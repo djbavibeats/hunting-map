@@ -50,7 +50,7 @@ const geojson = {
             144.960582, -37.774375
         ]} },
         { properties: { title: 'Brisbane' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
-            153.0332774, -27.4508573  
+            153.0328634, -27.4509998  
         ]} },
         /*
         { properties: { title: 'Dallas' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
