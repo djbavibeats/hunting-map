@@ -25,20 +25,9 @@ const Introduction = ({ user, setUser, setScreen }) => {
       HOW IT WORKS
     </p>
     <p className="font-tungsten font-normal text-2xl text-center mb-2">
-    {/* HUNTING SEASON HAS STARTED EARLY. JOIN THE HUNT FOR A CHANCE TO WIN AN EXCLUSIVE WAGE WAR PACKAGE AND TICKETS TO ONE OF OUR HEADLINE SHOWS. */}
-    Hunting season has started early. Join the hunt for a chance to win an exclusive Wage War package and tickets to one of our headline shows.
+      Hunting season has started early. Join the hunt for a chance to win an exclusive Wage War package and tickets to one of our headline shows.
     </p>
-    {/* <div className="
-        flex items-center justify-center gap-x-2
-        font-tungsten font-bold text-xl tracking-wide rounded-full border-2 py-2 px-8
-        hover:cursor-pointer hover:scale-110
-        transition duration-150 ease-in-out
-    " onClick={ () => setScreen('map') }>
-        <div className="mt-[1.75px]"><p className="font-tungsten">BYPASS SPOTIFY AUTHENTCATION</p></div> 
-        <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 512 512">
-            <path d="M217 401L345 273c9.4-9.4 9.4-24.6 0-33.9L217 111c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l87 87L24 232c-13.3 0-24 10.7-24 24s10.7 24 24 24l246.1 0-87 87c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0zM344 80l80 0c22.1 0 40 17.9 40 40l0 272c0 22.1-17.9 40-40 40l-80 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l80 0c48.6 0 88-39.4 88-88l0-272c0-48.6-39.4-88-88-88l-80 0c-13.3 0-24 10.7-24 24s10.7 24 24 24z"/>
-        </svg>
-    </div> */}
+ 
     <Spotify user={ user } setUser={ setUser } />
 
   </div>

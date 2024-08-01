@@ -50,14 +50,6 @@ const VideoPlayer = () => {
         <p className="font-tungsten font-normal text-2xl text-center mb-2">
             Enjoy the video.
         </p>
-        {/* <Youtube 
-            videoId="2g811Eo7K8U"
-            opts={{
-                width: videoDimensions.x + 'px',
-                height: videoDimensions.y + 'px'
-
-            }}
-        /> */}
         <div style={{
             height: videoDimensions.y + 'px',
             width: videoDimensions.x + 'px'

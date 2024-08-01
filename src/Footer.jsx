@@ -14,8 +14,6 @@ function Footer() {
           {/* <span onClick={ toggleTermsModalVisible } className="hover:cursor-pointer">Terms of Service.</span> */}
           <a className="" href="#" target="_blank" rel="noopener">Terms & Conditions.</a>
           &nbsp;
-          <span className="md:hidden"><br/></span>
-          <a href="/contest-rules">Contest Rules.</a>
           {/* &nbsp; */}
           {/* <a href="https://concord.com/privacy-policy/" target="_blank" rel="noopener">Privacy Policy.</a> */}
         </p>

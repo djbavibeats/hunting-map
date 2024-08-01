@@ -35,12 +35,12 @@ function Spotify ({ user, setUser }) {
     useEffect(() => {
         // Check if there is a code verifier in local storage
         let codeVerifier
-        if (localStorage.getItem('code_verifier')) {
-            codeVerifier = localStorage.getItem('code_verifier')
+        if (localStorage.getItem('ww_code_verifier')) {
+            codeVerifier = localStorage.getItem('ww_code_verifier')
         } else {
             // Generate code verifier if there is not already one stored in local storage
             codeVerifier  = generateRandomString(64)
-            window.localStorage.setItem('code_verifier', codeVerifier)
+            window.localStorage.setItem('ww_code_verifier', codeVerifier)
         }
         sha256(codeVerifier)
             .then(hashed => { 
@@ -49,7 +49,7 @@ function Spotify ({ user, setUser }) {
     }, [])
 
     useEffect(() => {
-        if (localStorage.getItem('access_token')) {
+        if (localStorage.getItem('ww_access_token')) {
             getSpotifyUser()
         }
     }, [ accessTokenRetrieved ])
@@ -60,7 +60,7 @@ function Spotify ({ user, setUser }) {
             const urlParams = new URLSearchParams(window.location.search)
             let code = urlParams.get('code')
             // This should only run if there is a code from the Spotify authentication window in the url and no access token in local storage
-            if (code && !localStorage.getItem('access_token')) {
+            if (code && !localStorage.getItem('ww_access_token')) {
                 console.log('getting spotify access token')
                 fetch('https://accounts.spotify.com/api/token', {
                     method: 'POST',
@@ -72,11 +72,11 @@ function Spotify ({ user, setUser }) {
                         grant_type: 'authorization_code',
                         code,
                         redirect_uri: spotifyCredentials.redirectUri,
-                        code_verifier: localStorage.getItem('code_verifier')
+                        code_verifier: localStorage.getItem('ww_code_verifier')
                     })
                 }).then(data => data.json())
                     .then(response => {
-                        localStorage.setItem('access_token', response.access_token)
+                        localStorage.setItem('ww_access_token', response.access_token)
                         setAccessTokenRetrieved(true)
                     })
             }
@@ -99,7 +99,7 @@ function Spotify ({ user, setUser }) {
 
     const getSpotifyUser = () => {
         console.log('getting spotify user')
-        let accessToken = localStorage.getItem('access_token')
+        let accessToken = localStorage.getItem('ww_access_token')
         fetch('https://api.spotify.com/v1/me', {
             headers: {
                 Authorization: 'Bearer ' + accessToken
@@ -117,7 +117,7 @@ function Spotify ({ user, setUser }) {
     }
 
     const followWageWar = () => {
-        let accessToken = localStorage.getItem('access_token')
+        let accessToken = localStorage.getItem('ww_access_token')
         fetch('https://api.spotify.com/v1/me/following?type=artist&ids=6bu7CtcOMWcS0BMq7snHW6', {
             method: "PUT",
             headers: {

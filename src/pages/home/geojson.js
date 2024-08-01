@@ -75,10 +75,10 @@ const geojson = {
         { properties: { title: 'Atlanta' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -84.387159, 33.787571
         ]} },
-        /*
         { properties: { title: 'Minneapolis' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
-            
+            -93.200596, 44.908282
         ]} },
+        /*
         { properties: { title: 'Philadelphia' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             
         ]} },
@@ -148,10 +148,10 @@ const geojson = {
         { properties: { title: 'Berlin' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             13.425650, 52.499700
         ]} },
-        /*
         { properties: { title: 'Sao Paolo' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
-            
+            -46.609111, -23.586944
         ]} },
+        /*
         { properties: { title: 'Paris' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             
         ]} },
