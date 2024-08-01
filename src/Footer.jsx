@@ -17,7 +17,7 @@ function Footer() {
         <p className="text-[10px] md:text-[14px] leading-[12px]">
           <p className="mb-2">No purchase necessary. Purchase will not improve chances of winning.</p>
           &nbsp;
-          <a href="#" target="_blank" rel="noopener"><strong>Terms & Conditions.</strong></a>
+          <a href="/terms-and-conditions"><strong>Terms & Conditions.</strong></a>
         </p>
       </div>
       {/* End Desktop Terms */}
@@ -36,7 +36,7 @@ function Footer() {
         <p className="text-[10px] md:text-[14px] leading-[12px]">
           <p className="mb-1">No purchase necessary. Purchase will not improve chances of winning.</p>
           &nbsp;
-          <a href="#" target="_blank" rel="noopener"><strong>Terms & Conditions.</strong></a>
+          <a href="/terms-and-conditions"><strong>Terms & Conditions.</strong></a>
         </p>
       </div>
       {/* End Mobile Terms */}

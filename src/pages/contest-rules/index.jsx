@@ -13,40 +13,54 @@ function ContestRules() {
             </div>
         </div>
         <div className="max-w-[340px] md:max-w-[800px] flex flex-col items-start">
-            <p className="font-tungsten font-bold text-center text-4xl mb-4 md:text-[4rem] leading-none">Official Contest Rules</p>
-            <p className="font-tungsten font-normal text-2xl mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue aliquam ultrices. Fusce ultrices vulputate venenatis. 
-            Vivamus eget iaculis urna. Pellentesque arcu neque, maximus eu mi vitae, pellentesque aliquam nibh. Mauris in pretium velit. 
-            Fusce pharetra, lorem in venenatis blandit, lectus metus tincidunt velit, eget tempus massa tortor vel justo. Suspendisse 
-            euismod eleifend mattis. Sed sed elementum mauris. Duis finibus sed nulla euismod accumsan. Curabitur fermentum lobortis 
-            justo ac sagittis. Donec quis mattis arcu, vel suscipit orci. Vestibulum lacus massa, rutrum quis viverra nec, dictum vel metus. 
-            In at arcu efficitur, mattis eros at, auctor nunc. Nulla tincidunt fermentum metus, quis pharetra lectus tincidunt et. Quisque 
-            vel iaculis lacus. Proin sed imperdiet est.
+            <p className="font-tungsten font-bold text-center text-4xl mb-4 leading-none m-auto">
+                WAGE WAR “HAPPY HUNTING”
+                <br/>
+                Official Rules 
+            </p>
+            <p className="font-tungsten font-bold text-center text-2xl mb-4 leading-none m-auto">
+                NO PURCHASE NECESSARY. PURCHASE WILL NOT IMPROVE CHANCES OF WINNING.
             </p>
             <p className="font-tungsten font-normal text-2xl mb-4">
-            Etiam vestibulum convallis mattis. Praesent maximus eros nec orci rutrum, eget cursus turpis fermentum. Integer aliquet mollis 
-            sem maximus ultricies. Maecenas ullamcorper scelerisque ex, sit amet scelerisque justo placerat id. Integer luctus diam nisl, 
-            in tempus turpis eleifend at. Donec aliquet velit at ligula tempor tristique. Suspendisse ac tristique turpis, eget lacinia velit. 
-            Pellentesque euismod porttitor blandit. Aenean non tortor euismod, ornare mauris ac, pulvinar diam. Class aptent taciti sociosqu 
-            ad litora torquent per conubia nostra, per inceptos himenaeos. Nam ac enim neque.
+                <strong>ELIGIBILITY:</strong> WAGE WAR “HAPPY HUNTING” Promotion (the “Promotion”) begins on Thursday, August 1, 2024 at 12pm Eastern time and extends while supplies last. You are not eligible for the Promotion if you are an employee of Concord Music Group, Inc. (“Sponsor,” “we,” us,” “our”) or its respective parent companies, subsidiaries, affiliates, advertising agencies, public relations agencies, prize suppliers, including any vendors providing services in connection with this Promotion (collectively, the “Sponsor Affiliates”), or an employee, agent, director, or officer (including members of their immediate family – i.e., spouse, mother, father, in-laws, grandmother, grandfather, brother, sister, children and grandchildren – or same household) of Sponsor or any Sponsor Affiliate.
             </p>
             <p className="font-tungsten font-normal text-2xl mb-4">
-            Nulla in dolor eu ante vehicula luctus. Aliquam tincidunt dolor metus, at luctus augue rhoncus sed. Praesent non nibh sapien. 
-            Pellentesque eu leo felis. Sed in risus vel risus tempor ultrices in quis est. Nunc ultricies sapien ex, id pellentesque elit 
-            ullamcorper vitae. Praesent vulputate nunc in nibh tempus, non tempus ante tempor. Suspendisse vitae imperdiet enim. Proin molestie 
-            velit neque, eu luctus quam blandit sed. Suspendisse non ipsum massa. Nam consectetur gravida odio nec facilisis. Pellentesque 
-            habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur quam sapien, eleifend ac neque a, 
-            feugiat accumsan odio. Fusce sed rutrum turpis, ac varius orci.
+                <strong>TO ENTER:</strong> To enter, follow the instructions provided in the link (the “Promotion Link”) below:
+            </p>
+            <a className="font-tungsten font-normal text-2xl mb-4" href="/">hunt.wagewarband.com </a>
+            <p className="font-tungsten font-normal text-2xl mb-4">
+                The website will guide you through the process necessary to partake in the Promotion. The winner (“Winner”) of the Promotion will find the Prize (to be defined hereunder) in the hidden location first. MULTIPLE WINNERS: If two or more individuals find the Prize at the same time, please take a time stamped photo of the group and contact the Sponsor at fearlesscontesting@gmail.com
             </p>
             <p className="font-tungsten font-normal text-2xl mb-4">
-            Vestibulum ultricies, libero nec viverra congue, tellus ante imperdiet est, nec euismod est elit sed diam. Donec quis tincidunt augue, 
-            quis porta tortor. Nunc at nibh et justo dignissim ornare a eleifend metus. Donec feugiat nisi in luctus fringilla. Vivamus pretium 
-            sem quam, at hendrerit risus egestas eget. Mauris nec enim quis felis pharetra finibus nec ac mauris. Pellentesque habitant morbi 
-            tristique senectus et netus et malesuada fames ac turpis egestas. Nam quis ullamcorper quam. In malesuada semper ligula, in dapibus 
-            nisi malesuada at. Maecenas venenatis sit amet tortor at tristique. Aenean pulvinar ante pellentesque felis aliquet, ut cursus elit 
-            interdum. Sed mollis, justo convallis scelerisque varius, enim mi efficitur odio, dignissim ornare dui lacus sit amet metus. Vivamus 
-            sollicitudin porttitor libero, sed sollicitudin ipsum ullamcorper sit amet. Duis diam ligula, eleifend vitae mattis at, hendrerit ut 
-            mauris. Donec et felis quis justo varius imperdiet. Nam pharetra nisl augue, sit amet tempor elit hendrerit eget.
+                <strong>PRIZES:</strong> The following Prize (individually, the “Prize” and collectively referred to as the “Prizes”) will be available to the Winner:
+                <br/>
+                - A WAGE WAR Merch Pack
+                <br/>
+                - A QR Code to Free Concert Tickets for a WAGE WAR show (Approx. Value $100)
+            </p>
+            <p className="font-tungsten font-normal text-2xl mb-4">
+                The Prize will be available in cities listed on the Promotion Link.
+            </p>
+            <p className="font-tungsten font-normal text-2xl mb-4">
+                Neither Sponsor nor Sponsor Affiliates make or offer any warranty or guarantee, either express or implied (including, without limitation, quality, merchantability, and fitness for a particular purpose) in connection with this Promotion or Prize. Prize details and availability are subject to change, in which case a prize of equal value may be substituted at Sponsor&#39;s sole discretion. The Prize consists only of the items listed, are non-transferable, with no cash redemption or substitution except at Sponsor&#39;s sole discretion. Federal, state, or local taxes on prizes, if any, and any other costs, fees or expenses not listed above are the sole responsibility of the Winners. Odds of winning depend on how quickly a participant can locate the Prize in their city.
+            </p>
+            <p className="font-tungsten font-normal text-2xl mb-4">
+                <strong>PUBLICITY &amp; MARKETING:</strong> Acceptance of any Prize constitutes permission to the Sponsor to use your name, voice, statements, image and likeness for purposes of advertising and trade in any medium, without further compensation or notice, unless prohibited by law. Submission of your contact information in connection with this Promotion (whether or not required), including name, mailing address, phone number, and email address, constitutes permission for Sponsor to add you to Sponsor’s contact database and to contact you in the future for promotional and other reasons. You may opt-out of receiving such communications as set forth in Sponsor’s Privacy Policy (located at https://concord.com/privacy-policy/) or as provided within any such marketing materials (e.g., using the “Unsubscribe” feature provided in the footer of Sponsor’s emails).
+            </p>
+            <p className="font-tungsten font-normal text-2xl mb-4">
+                <strong>NO LIABILITY &amp; INDEMNIFICATION:</strong> Sponsor and Sponsor Affiliates are not responsible for, and entrants release each from any failures of any kind (whether caused by computer, technical, or human error), that may either limit the entrant’s ability to submit an entry, claim a prize, or otherwise participate in this Promotion, or Sponsor’s ability to include all eligible entries, conduct random drawings, notify potential winners, or otherwise execute this Promotion in the manner intended. Entrants further release and agree to indemnify Sponsor and Sponsor Affiliates from any and all liability, claims or actions of any kind whatsoever arising from injuries, damages, or losses to persons or property which may be sustained in connection with this Promotion including, but not limited to: (a) the receipt, ownership or use of any prize awarded; (b) any travel or prize-related activity; (c) any typographical or other error in these Official Rules or any other materials disseminated by Sponsor; and (d) any technical malfunction, failure, error, omission, interruption, deletion, defect, delay in operation or communications line failure, regardless of cause, with any equipment, systems, networks, lines, satellites, servers, computers, or providers used by an entrant or Sponsor.
+            </p>
+            <p className="font-tungsten font-normal text-2xl mb-4">
+                <strong>OTHER TERMS:</strong> Decisions of Sponsor and/or Artist on all matters related to the Promotion are final. Sponsor reserves the right to cancel or modify the Promotion for any reason, including but not limited to, if fraud, misconduct or technical failures destroy the integrity of the Promotion, or if a computer virus, bug, or other technical problem corrupts the administration, security, or proper administration of the Promotion as determined by Sponsor, in its sole discretion. Sponsor reserves the right to disqualify or prohibit the participation of an individual if fraud or tampering is suspected, or if the individual fails to comply with any requirement of participation or with any provision in these Official Rules. CAUTION: ANY ATTEMPT TO DELIBERATELY DAMAGE OR UNDERMINE THE OPERATION OF THIS PROMOTION IS A VIOLATION OF CRIMINAL &amp; CIVIL LAWS. SPONSOR RESERVES THE RIGHT TO DISQUALIFY AND/OR SEEK DAMAGES FROM ANY INDIVIDUAL MAKING ANY SUCH ATTEMPTS TO THE FULL EXTENT PERMITTED BY LAW.
+            </p>
+            <p className="font-tungsten font-normal text-2xl mb-4">
+                <strong>JURISDICTION:</strong> Any claims or lawsuits related to the Promotion brought against any Sponsor shall be brought in the federal or state courts of the State of Tennessee. By participating in the Promotion, you agree to the jurisdiction and venue of such courts and waive all objections to such jurisdiction and venue.
+            </p>
+            <p className="font-tungsten font-normal text-2xl mb-4">
+                <strong>WINNER LIST:</strong> To obtain the name of the Winners (available after September 1, 2024) send a self-addressed stamped envelope (residents of Vermont may omit return postage) to: WAGE WAR “HAPPY HUNTING” Promotion, 5750 Wilshire Boulevard, Suite 450, Los Angeles, CA 90036.
+            </p>
+            <p className="font-tungsten font-normal text-2xl mb-4">
+                <strong>SPONSOR:</strong> CMGI Recorded Music Assets, LLC through Fearless Records, a division of Concord Music Group, Inc.
             </p>
             <a className="font-tungsten text-center items-center w-full text-2xl font-bold" href="/">Back to home</a>
             <div className="h-20 flex items-center justify-center bottom-0 left-0 right-0 m-auto">

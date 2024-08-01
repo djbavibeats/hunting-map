@@ -1,42 +1,6 @@
 const geojson = {
     type: 'FeatureCollection',
     features: [
-        // {
-            // type: 'Feature',
-            // geometry: {
-            //     type: 'Point',
-            //     coordinates: [ -86.76977210369314, 36.15761505288509 ]
-            // },
-            // properties: {
-            //     title: 'Fearless Records',
-            //     description: 'Nashville, TN',
-            //     type: 'tacklebox'
-            // }
-        // },
-        // {
-            // type: 'Feature',
-            // geometry: {
-            //     type: 'Point',
-            //     coordinates: [ -118.35485330514496, 34.0613695896722 ]
-            // },
-            // properties: {
-            //     title: 'Fearless Records',
-            //     description: 'Los Angeles, CA',
-            //     type: 'tacklebox'
-            // }
-        // },
-        // {
-            // type: 'Feature',
-            // geometry: {
-            //     type: 'Point',
-            //     coordinates: [ -73.97812588853213, 40.67943414392307 ]
-            // },
-            // properties: {
-            //     title: 'Some Apartment',
-            //     description: 'Brooklyn, NY',
-            //     type: 'tacklebox'
-            // }
-        // },
         // Live Coordinates
        { properties: { title: 'Sydney' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             151.204953, -33.874281
@@ -82,11 +46,9 @@ const geojson = {
         { properties: { title: 'Los Angeles' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -118.353610, 34.060820 
         ]} },
-        /*
         { properties: { title: 'Los Angeles' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
-            -118.223520, 39.10299
+            -118.223520, 34.102990
         ]} },
-        */
         { properties: { title: 'Orlando' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -81.346702, 28.567499
         ]} },

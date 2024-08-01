@@ -16,7 +16,7 @@ function App() {
       <Route path="/" component={ Home } />
       {/* <Route path="/dropbox" component={ Dropbox } /> */}
       <Route path="/golden-ticket" component={ GoldenTicket } />
-      <Route path="/contest-rules" component={ ContestRules } />
+      <Route path="/terms-and-conditions" component={ ContestRules } />
       <Footer />
     </>
   )
