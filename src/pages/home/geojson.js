@@ -14,7 +14,7 @@ const geojson = {
         { properties: { title: 'Denver', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -96.711444, 40.815722
         ]} },
-        { properties: { title: 'Charlotte', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        { properties: { title: 'Charlotte', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -80.844220, 35.189580
         ]} },
         { properties: { title: 'London', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
@@ -26,7 +26,7 @@ const geojson = {
         { properties: { title: 'Phoenix', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -111.939420, 33.434750
         ]} },
-        { properties: { title: 'Atlanta', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        { properties: { title: 'Atlanta', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -84.387159, 33.787571
         ]} },
         { properties: { title: 'Minneapolis', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
