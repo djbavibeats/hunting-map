@@ -9,7 +9,7 @@ const geojson = {
             144.960582, -37.774375
         ]} },
         { properties: { title: 'Brisbane' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
-            153.0328634, -27.4509998  
+            153.032662, -27.452687  
         ]} },
         /*
         { properties: { title: 'Denver' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
@@ -88,10 +88,10 @@ const geojson = {
         { properties: { title: 'Sao Paolo' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -46.609111, -23.586944
         ]} },
-        /*
         { properties: { title: 'Paris' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
-            
+            2.343122, 48.896377
         ]} },
+        /*
         { properties: { title: 'Chicago' }, type: 'Feature', geometry: { type: 'Point', coordinates: [
 
         ]} },
