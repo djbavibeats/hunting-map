@@ -38,11 +38,6 @@ const geojson = {
             // }
         // },
         // Live Coordinates
-        /*
-        { properties: { title: 'Chicago' }, type: 'Feature', geometry: { type: 'Point', coordinates: [
-
-        ]} },
-        */
        { properties: { title: 'Sydney' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             151.204953, -33.874281
         ]} },
@@ -53,14 +48,11 @@ const geojson = {
             153.0328634, -27.4509998  
         ]} },
         /*
-        { properties: { title: 'Dallas' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
-            
-        ]} },
-        */
         { properties: { title: 'Denver' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -96.711444, 40.815722
         ]} },
-       { properties: { title: 'Charlotte' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        */
+        { properties: { title: 'Charlotte' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -80.844220, 35.189580
         ]} },
         { properties: { title: 'London' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
@@ -78,44 +70,32 @@ const geojson = {
         { properties: { title: 'Minneapolis' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -93.200596, 44.908282
         ]} },
-        /*
-        { properties: { title: 'Philadelphia' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
-            
-        ]} },
-        */
         { properties: { title: 'San Antonio' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -98.473450, 29.590220
         ]} },
         { properties: { title: 'Seattle' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -122.321630, 47.545180
         ]} },
-        /*
         { properties: { title: 'Houston' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
-            
+            -95.396170, 29.736970
         ]} },
-        */
         { properties: { title: 'Los Angeles' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -118.353610, 34.060820 
         ]} },
         /*
         { properties: { title: 'Los Angeles' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
-            
-        ]} },
-        { properties: { title: 'Sacramento' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
-            
+            -118.223520, 39.10299
         ]} },
         */
         { properties: { title: 'Orlando' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -81.346702, 28.567499
         ]} },
-        /*
         { properties: { title: 'Detroit' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
-            
+            -83.108429, 42.509901
         ]} },
         { properties: { title: 'Salt Lake City' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
-            
+            -111.905037, 40.768863
         ]} },
-        */
         { properties: { title: 'New York' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -73.976640, 40.76618
         ]} },
@@ -137,11 +117,6 @@ const geojson = {
         { properties: { title: 'Brooklyn' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -73.980740, 40.726510
         ]} },
-        /*
-        { properties: { title: 'Tampa' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
-            
-        ]} },
-        */
         { properties: { title: 'Washington DC' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -77.042100, 39.053170
         ]} },
@@ -153,6 +128,18 @@ const geojson = {
         ]} },
         /*
         { properties: { title: 'Paris' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+            
+        ]} },
+        { properties: { title: 'Chicago' }, type: 'Feature', geometry: { type: 'Point', coordinates: [
+
+        ]} },
+        { properties: { title: 'Philadelphia' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+            
+        ]} },
+        { properties: { title: 'Sacramento' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+            
+        ]} },
+        { properties: { title: 'Tampa' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             
         ]} },
          */
