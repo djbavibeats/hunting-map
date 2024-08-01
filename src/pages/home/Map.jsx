@@ -127,9 +127,6 @@ const MobileButtonsBlock = ({ activeScreen, setActiveScreen }) => {
             </div>
         </div>
         
-        <div className="mt-[1.75px]"><p className="mt-2 text-2xl font-tungsten">
-            No Locations Near You? <a href="#" className="underline">Enter To Win Here</a>
-        </p></div> 
         </>)
 }
 
