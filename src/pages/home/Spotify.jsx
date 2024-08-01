@@ -10,7 +10,7 @@ function Spotify ({ user, setUser }) {
     const [ spotifyCredentials, setSpotifyCredentials ] = useState({
         clientId: spotify_client_id,
         redirectUri: redirect_uri,
-        scope: 'user-read-private user-read-email user-follow-modify user-library-modify playlist-modify-public playlist-modify-private',
+        scope: 'user-read-private user-read-email user-follow-modify',
     })
 
     const sha256 = async (plain) => {
