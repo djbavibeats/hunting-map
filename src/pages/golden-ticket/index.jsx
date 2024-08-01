@@ -133,7 +133,7 @@ const SubmissionForm = ({ setFormSubmitted }) => {
 
     return (<div className="">
         <p className="font-tungsten font-bold text-[1.75rem] tracking-normal text-center mb-0">
-            CONGRATS ON COMPLETING THE HUNG.
+            CONGRATS ON COMPLETING THE HUNT.
         </p>
         <p className="font-tungsten font-normal text-2xl text-center mb-2">
             Fill out the form below to claim your prize.
