@@ -11,11 +11,9 @@ const geojson = {
         { properties: { title: 'Brisbane' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             153.032662, -27.452687  
         ]} },
-        /*
         { properties: { title: 'Denver' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -96.711444, 40.815722
         ]} },
-        */
         { properties: { title: 'Charlotte' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -80.844220, 35.189580
         ]} },
