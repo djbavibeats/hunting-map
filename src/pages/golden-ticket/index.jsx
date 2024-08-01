@@ -273,11 +273,11 @@ const SubmissionForm = ({ setFormSubmitted }) => {
 }
 function GoldenTicket() {
     const [ formSubmitted, setFormSubmitted ] = useState(false)
-    // useEffect(() => {
-    //     if (localStorage.getItem('form_submitted') === 'true') {
-    //         setFormSubmitted(true)
-    //     }
-    // }, [])
+    useEffect(() => {
+        if (localStorage.getItem('form_submitted') === 'true') {
+            setFormSubmitted(true)
+        }
+    }, [])
     
     return (<div className="w-full flex items-center justify-center content-body">
         <div>
