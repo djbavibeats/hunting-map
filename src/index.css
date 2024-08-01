@@ -170,6 +170,7 @@ input[type='file'] {
   font-size: 1.5rem;
   line-height: 2rem;
   margin-right: 25px;
+  border: none !important;
 }
 
 .input-group-text {
