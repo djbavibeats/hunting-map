@@ -89,14 +89,14 @@ const geojson = {
         { properties: { title: 'Paris', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             2.343122, 48.896377
         ]} },
+        { properties: { title: 'Sacramento', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+            -121.507840, 38.601330
+        ]} },
         /*
-        { properties: { title: 'Chicago' }, type: 'Feature', geometry: { type: 'Point', coordinates: [
+        { properties: { title: 'Chicago', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [
 
         ]} },
-        { properties: { title: 'Philadelphia' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
-            
-        ]} },
-        { properties: { title: 'Sacramento' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        { properties: { title: 'Philadelphia', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             
         ]} },
         { properties: { title: 'Tampa' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
