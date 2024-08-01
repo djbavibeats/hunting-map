@@ -47,7 +47,7 @@ const geojson = {
         { properties: { title: 'Los Angeles', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -118.223520, 34.102990
         ]} },
-        { properties: { title: 'Orlando', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        { properties: { title: 'Orlando', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -81.346702, 28.567499
         ]} },
         { properties: { title: 'Detroit', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
