@@ -189,8 +189,32 @@ const MapBlock = () => {
           
             // make a marker for each feature and add to the map
             const el = document.createElement('div');
-            el.className = 'tacklebox marker'
+            // el.className = 'tacklebox marker'
             
+            switch (feature.properties.status) {
+                case('found'):
+                    el.className = 'tacklebox found marker'
+                    new mapboxgl.Marker(el)
+                        .setLngLat(feature.geometry.coordinates)
+                        .addTo(map.current);
+                    break
+                case ('hidden'):
+                    el.className = 'tacklebox marker'
+                    new mapboxgl.Marker(el)
+                        .setLngLat(feature.geometry.coordinates)
+                        .setPopup(
+                            new mapboxgl.Popup({ offset: 25 }) // add popups
+                                .setHTML(
+                                `
+                                <p>${feature.geometry.coordinates[1]}, ${feature.geometry.coordinates[0]}</p>
+                                `
+                                )
+                        )
+                        .addTo(map.current);
+                    break
+                default:
+                    el.className = 'tacklebox marker'
+            }
             // switch (feature.properties.type) {
             //     case ('tacklebox'):
             //         el.className = 'tacklebox marker'
@@ -200,18 +224,6 @@ const MapBlock = () => {
             //     default:
             //         break
             // }
-
-            new mapboxgl.Marker(el)
-                .setLngLat(feature.geometry.coordinates)
-                .setPopup(
-                    new mapboxgl.Popup({ offset: 25 }) // add popups
-                        .setHTML(
-                        `
-                        <p>${feature.geometry.coordinates[1]}, ${feature.geometry.coordinates[0]}</p>
-                        `
-                        )
-                )
-                .addTo(map.current);
             
           }
     }, [ posInitialized ])
