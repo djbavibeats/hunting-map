@@ -35,7 +35,7 @@ const geojson = {
         { properties: { title: 'San Antonio', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -98.473450, 29.590220
         ]} },
-        { properties: { title: 'Seattle', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        { properties: { title: 'Seattle', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -122.321630, 47.545180
         ]} },
         { properties: { title: 'Houston', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
@@ -53,7 +53,7 @@ const geojson = {
         { properties: { title: 'Detroit', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -83.108429, 42.509901
         ]} },
-        { properties: { title: 'Salt Lake City', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        { properties: { title: 'Salt Lake City', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -111.905037, 40.768863
         ]} },
         { properties: { title: 'New York', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
@@ -92,6 +92,10 @@ const geojson = {
         { properties: { title: 'Sacramento', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -121.507840, 38.601330
         ]} },
+        { properties: { title: 'Nashville', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+            -86.790330, 36.120020
+        ]} },
+        
         /*
         { properties: { title: 'Chicago', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [
 
