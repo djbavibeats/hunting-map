@@ -3,7 +3,7 @@ function Navbar () {
         const shareData = {
             title: "Wage War - Happy Hunting",
             text: "Join the hunt!",
-            url: "https://wagewarband.com/",
+            url: "https://hunt.wagewarband.com/",
         }
 
         if (navigator.share && navigator.canShare(shareData)) {
