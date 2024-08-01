@@ -45,7 +45,7 @@ const VideoPlayer = () => {
     }, [ size ])
     return (<>   
         <p className="font-tungsten font-normal text-2xl text-center mb-2">
-            Enjoy a sneak peek of the official Happy Hunting music video. A member from our team will contact you shortly regarding next steps on claiming your tickets.
+            Enjoy a sneak peek of the official Happy Hunting music video. Once we are able to verify that you have successfully found the box, a member from our team will contact you shortly regarding next steps on claiming your tickets.
         </p>
         <div style={{
             height: videoDimensions.y + 'px',
