@@ -59,7 +59,7 @@ const geojson = {
         { properties: { title: 'New York', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -73.976640, 40.76618
         ]} },
-        { properties: { title: 'Montreal', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        { properties: { title: 'Montreal', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -73.250500, 45.305140
         ]} },
         { properties: { title: 'Kansas City', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
