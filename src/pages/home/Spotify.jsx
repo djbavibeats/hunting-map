@@ -106,13 +106,18 @@ function Spotify ({ user, setUser }) {
             }
         }).then(data => data.json())
             .then(response => {
-                setUser({ 
-                    loggedIn: true,
-                    id: response.id,
-                    display_name: response.display_name,
-                    product: response.product
-                })
-                followWageWar()
+                if (response.error) {
+                    console.log('Spotify access token invalid or expired. Please login again.')
+                    localStorage.removeItem('ww_access_token')
+                } else {
+                    setUser({ 
+                        loggedIn: true,
+                        id: response.id,
+                        display_name: response.display_name,
+                        product: response.product
+                    })
+                    followWageWar()
+                }
             })
     }
 

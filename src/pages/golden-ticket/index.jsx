@@ -201,12 +201,12 @@ const SubmissionForm = ({ setFormSubmitted }) => {
             <div className="flex flex-col gap-x-2 gap-y-2 mb-4 items-start">
                 <p className="font-tungsten text-2xl">Please upload a photo of the box you found.</p>
                 <div className={`input-group max-w-[350px]`}>
-                    <label 
+                    {/* <label 
                         className="input-group-text font-tungsten px-8 py-2 rounded-full text-2xl text-[#d2c551] bg-black" 
                         htmlFor="file"
                     >
                         Browse
-                    </label>
+                    </label> */}
                     <input 
                         required
                         ref={ file } 
@@ -218,7 +218,7 @@ const SubmissionForm = ({ setFormSubmitted }) => {
                                 imageFileName: `${formFields.firstName}-${formFields.lastName}-${file.current.files[0].name}`
                             })
                         }}
-                        className="form-control font-tungsten text-2xl pl-2"
+                        className="form-control font-tungsten text-2xl"
                     >
                     </input>
                 </div>
