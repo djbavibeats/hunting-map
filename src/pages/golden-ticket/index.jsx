@@ -44,11 +44,8 @@ const VideoPlayer = () => {
         }
     }, [ size ])
     return (<>   
-        <p className="font-tungsten font-bold text-[1.75rem] tracking-normal mb-0">
-            THANK YOU
-        </p>
         <p className="font-tungsten font-normal text-2xl text-center mb-2">
-            Enjoy the video.
+            Enjoy a sneak peek of the official Happy Hunting music video. A member from our team will contact you shortly regarding next steps on claiming your tickets.
         </p>
         <div style={{
             height: videoDimensions.y + 'px',
@@ -136,10 +133,10 @@ const SubmissionForm = ({ setFormSubmitted }) => {
 
     return (<div className="">
         <p className="font-tungsten font-bold text-[1.75rem] tracking-normal text-center mb-0">
-            FILL OUT THE FORM
+            CONGRATS ON COMPLETING THE HUNG.
         </p>
         <p className="font-tungsten font-normal text-2xl text-center mb-2">
-            Then you can enjoy the video.
+            Fill out the form below to claim your prize.
         </p>
         {
             error &&

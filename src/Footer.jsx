@@ -1,6 +1,6 @@
 function Footer() {
     return (
-    <div className="h-[45px] bg-black text-yellow flex flex-row md:flex-row items-center justify-between px-4 text-sm">
+    <div className="h-[60px] bg-black text-yellow flex flex-row md:flex-row items-center justify-between px-4 text-sm">
       <div className="w-1/3 text-left">
         <p className="text-[10px] md:text-[14px] leading-[12px]">
           <a href="https://wagewarband.com/" target="_blank" rel="noopener">Wage War.</a>
@@ -11,10 +11,13 @@ function Footer() {
       </div>
       <div className="w-1/3  text-center">
         <p className="text-[10px] md:text-[14px] leading-[12px]">
+          <p>NO PURCHASE NECESSARY. PURCHASE WILL NOT IMPROVE CHANCES OF WINNING.</p>
+          &nbsp;
+          <br/>
+          {/* <br /> */}
           {/* <span onClick={ toggleTermsModalVisible } className="hover:cursor-pointer">Terms of Service.</span> */}
           <a className="" href="#" target="_blank" rel="noopener">Terms & Conditions.</a>
           &nbsp;
-          {/* &nbsp; */}
           {/* <a href="https://concord.com/privacy-policy/" target="_blank" rel="noopener">Privacy Policy.</a> */}
         </p>
       </div>
