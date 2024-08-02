@@ -17,10 +17,10 @@ const geojson = {
         { properties: { title: 'Charlotte', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -80.844220, 35.189580
         ]} },
-        { properties: { title: 'London', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        { properties: { title: 'London', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -1.832630, 51.175810
         ]} },
-        { properties: { title: 'Camden', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        { properties: { title: 'Camden', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -0.143460, 51.541900
         ]} },
         { properties: { title: 'Phoenix', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
