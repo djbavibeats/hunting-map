@@ -80,7 +80,7 @@ const geojson = {
         { properties: { title: 'Washington DC', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -77.042100, 39.053170
         ]} },
-        { properties: { title: 'Berlin', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        { properties: { title: 'Berlin', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             13.425650, 52.499700
         ]} },
         { properties: { title: 'Sao Paolo', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
