@@ -2,16 +2,16 @@ const geojson = {
     type: 'FeatureCollection',
     features: [
         // Live Coordinates
-       { properties: { title: 'Sydney', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+       { properties: { title: 'Sydney', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             151.204953, -33.874281
         ]} },
-        { properties: { title: 'Melbourne', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        { properties: { title: 'Melbourne', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             144.960582, -37.774375
         ]} },
-        { properties: { title: 'Brisbane', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        { properties: { title: 'Brisbane', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             153.032662, -27.452687  
         ]} },
-        { properties: { title: 'Denver', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        { properties: { title: 'Denver', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -96.711444, 40.815722
         ]} },
         { properties: { title: 'Charlotte', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
@@ -38,19 +38,19 @@ const geojson = {
         { properties: { title: 'Seattle', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -122.321630, 47.545180
         ]} },
-        { properties: { title: 'Houston', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        { properties: { title: 'Houston', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -95.396170, 29.736970
         ]} },
         { properties: { title: 'Los Angeles', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -118.353610, 34.060820 
         ]} },
-        { properties: { title: 'Los Angeles', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        { properties: { title: 'Los Angeles', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -118.223520, 34.102990
         ]} },
         { properties: { title: 'Orlando', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -81.346702, 28.567499
         ]} },
-        { properties: { title: 'Detroit', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        { properties: { title: 'Detroit', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -83.108429, 42.509901
         ]} },
         { properties: { title: 'Salt Lake City', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
@@ -62,7 +62,7 @@ const geojson = {
         { properties: { title: 'Montreal', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -73.250500, 45.305140
         ]} },
-        { properties: { title: 'Kansas City', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        { properties: { title: 'Kansas City', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -94.592160, 38.997510
         ]} },
         { properties: { title: 'Toronto', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
@@ -92,7 +92,7 @@ const geojson = {
         { properties: { title: 'Sacramento', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -121.507840, 38.601330
         ]} },
-        { properties: { title: 'Nashville', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        { properties: { title: 'Nashville', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -86.790330, 36.120020
         ]} },
         
