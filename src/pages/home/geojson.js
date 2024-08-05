@@ -74,7 +74,7 @@ const geojson = {
         { properties: { title: 'Cincinnati', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -84.512980, 39.095390
         ]} },
-        { properties: { title: 'Brooklyn', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        { properties: { title: 'Brooklyn', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -73.980740, 40.726510
         ]} },
         { properties: { title: 'Washington DC', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
@@ -86,7 +86,7 @@ const geojson = {
         { properties: { title: 'Sao Paolo', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -46.609111, -23.586944
         ]} },
-        { properties: { title: 'Paris', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        { properties: { title: 'Paris', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             2.343122, 48.896377
         ]} },
         { properties: { title: 'Sacramento', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
