@@ -23,13 +23,13 @@ const geojson = {
         { properties: { title: 'Camden', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -0.143460, 51.541900
         ]} },
-        { properties: { title: 'Phoenix', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        { properties: { title: 'Phoenix', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -111.939420, 33.434750
         ]} },
         { properties: { title: 'Atlanta', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -84.387159, 33.787571
         ]} },
-        { properties: { title: 'Minneapolis', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        { properties: { title: 'Minneapolis', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -93.200596, 44.908282
         ]} },
         { properties: { title: 'San Antonio', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
@@ -56,7 +56,7 @@ const geojson = {
         { properties: { title: 'Salt Lake City', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -111.905037, 40.768863
         ]} },
-        { properties: { title: 'New York', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        { properties: { title: 'New York', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -73.976640, 40.76618
         ]} },
         { properties: { title: 'Montreal', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
@@ -65,31 +65,31 @@ const geojson = {
         { properties: { title: 'Kansas City', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -94.592160, 38.997510
         ]} },
-        { properties: { title: 'Toronto', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        { properties: { title: 'Toronto', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -79.373329, 43.650253
         ]} },
-        { properties: { title: 'Toronto', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        { properties: { title: 'Toronto', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -79.394480, 43.649020
         ]} },
-        { properties: { title: 'Cincinnati', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        { properties: { title: 'Cincinnati', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -84.512980, 39.095390
         ]} },
         { properties: { title: 'Brooklyn', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -73.980740, 40.726510
         ]} },
-        { properties: { title: 'Washington DC', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        { properties: { title: 'Washington DC', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -77.042100, 39.053170
         ]} },
         { properties: { title: 'Berlin', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             13.425650, 52.499700
         ]} },
-        { properties: { title: 'Sao Paolo', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        { properties: { title: 'Sao Paolo', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -46.609111, -23.586944
         ]} },
         { properties: { title: 'Paris', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             2.343122, 48.896377
         ]} },
-        { properties: { title: 'Sacramento', status: 'hidden' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
+        { properties: { title: 'Sacramento', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
             -121.507840, 38.601330
         ]} },
         { properties: { title: 'Nashville', status: 'found' }, type: 'Feature', geometry: { type: 'Point', coordinates: [ 
